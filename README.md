@@ -54,7 +54,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
-use smsmbero\AutoConvertTextToAudio\Traits\HasMultilangTTS;
+use commacodes\AutoConvertTextToAudio\Traits\HasMultilangTTS;
 
 class PostController extends Controller
 {

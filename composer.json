@@ -1,0 +1,20 @@
+{
+    "name": "commacodes/auto-convert-text-to-audio",
+    "description": "Automatically converts multilingual text to audio and attaches it to your Laravel models.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "commacodes\\AutoConvertTextToAudio\\": "src/"
+        }
+    },
+    "require": {
+        "google/cloud-text-to-speech": "^1.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "commacodes\\AutoConvertTextToAudio\\AutoConvertTextToAudioServiceProvider"
+            ]
+        }
+    }
+}

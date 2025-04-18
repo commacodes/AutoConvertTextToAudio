@@ -35,6 +35,28 @@ php artisan vendor:publish --tag=config
 storage/app/google/google-tts.json
 ```
 
+## Add This Trait To Your Model "HasMultilangTTS"
+```bash
+<?php
+
+namespace App\Models;
+
+use commacodes\AutoConvertTextToAudio\Traits\HasMultilangTTS;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+
+
+class Post extends Model
+{
+    use HasFactory, HasMultilangTTS;
+
+    protected $guarded = [];
+
+}
+```
+
+
 ## Add the required columns to your model's database table
 ### You need to add the necessary columns (audio_en, audio_fr, audio_ar) to your table:
 ```php

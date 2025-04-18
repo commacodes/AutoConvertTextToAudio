@@ -21,8 +21,8 @@ class TextToSpeechService
         foreach ($translations as $lang => $text) {
             if (!$text) continue;
 
-            $languageCode = config("tts.languages.$lang.languageCode", 'en-US');
-            $gender = config("tts.languages.$lang.gender", 'FEMALE');
+            $languageCode = config("tts.languages.$lang.languageCode", 'ar-XA');
+            $gender = config("tts.languages.$lang.gender", 'MALE');
 
             $input = new SynthesisInput();
             $input->setText($text);
